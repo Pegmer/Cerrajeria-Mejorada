@@ -1,0 +1,252 @@
+body{
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+}
+
+/*Generalidades:*/
+
+.letras{
+    color: rgb(190, 190, 190);
+    text-shadow:    0 1px 0 gray,
+                    0 1.1px 0 gray;
+}
+
+.botones{
+    align-items: center;
+    appearance: none;
+    background-image: url("Imagenes\\Wood.jpg");
+    background-size: 100px;
+    border: 0;
+    border-radius: 6px;
+    box-shadow:  rgba(113, 80, 26, 0.4) 0 2px 4px,rgba(113, 80, 26, 0.3) 0 7px 13px -3px,rgba(113, 80, 26, 0.3) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: rgb(190, 190, 190);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+  .botones:focus {
+    box-shadow: rgb(70, 40, 10) 0 0 0 1.5px inset, rgba(113, 80, 26, 0.4) 0 2px 4px,rgba(113, 80, 26, 0.3) 0 7px 13px -3px, rgbrgb(70, 40, 10) 0 -3px 0 inset;
+  }
+  
+  .botones:hover {
+    box-shadow: rgba(113, 80, 26, 0.4) 0 2px 4px,rgba(113, 80, 26, 0.3) 0 7px 13px -3px, rgb(70, 40, 10) -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .botones:active {
+    box-shadow: rgb(70, 40, 10) 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+
+/* Header */
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid rgb(192, 192, 192);
+    border-radius: 5px;
+}
+
+.buscador{
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.buscar{
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 16px;
+    font-family: "Playfair Display", sans-serif;
+    border-radius: 15px;
+    color: rgb(192, 192, 192);
+    border: 3px solid rgb(90, 40, 10);
+    background: #fff url("Imagenes\\Buscar.png") no-repeat 5px center;
+    background-size: 23px;
+    width: 70px;
+    transition: all .5s;
+    margin: 5px;
+}
+
+.buscar:hover{
+    width: 200px;
+    border-color: rgba(113, 80, 26, 0.4);
+    box-shadow: 0 0 5px rgb(70, 40, 10);
+}
+
+.botonbuscar{
+    height: 32px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    padding: 0.5px;
+    margin: 0;
+}
+
+.redes{
+    margin: 1em;
+    padding: 0;
+}
+.icono{
+    width: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+/*Main*/
+
+.todo{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    padding-bottom: 2.2rem;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+    font-size: 5rem;
+    text-align: center;
+    color: transparent;
+    background: url("Imagenes\\Fondo.jpg") repeat;
+    background-size: 100px;
+    background-position: center;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    font-family: 'Playfair Display', serif;
+ 
+ }
+
+.titulo{
+    -webkit-box-reflect: below -30px linear-gradient(transparent, transparent, rgb(0,0,0,0.4)); 
+}
+
+.imagenes{
+    height: 200px;
+ }
+
+ .botoncompra{
+    height: 48px;
+ }
+
+ .llave{
+    background-color: #70624c;
+    flex-grow: 1;
+    margin: 20px;
+    width: 200px;
+    max-width: 300px;
+    border:  2px solid rgb(90, 40, 10);
+    padding: 10px 10px;
+ }
+
+/*footer*/
+
+footer{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: black;
+    border: 2px solid rgb(192, 192, 192);
+    border-radius: 5px;
+}
+
+.item{
+    flex-grow: 1; /*colocar del mismo tamaño el menu*/
+    flex-basis: 0; /*colocar del mismo tamaño el menu*/
+    margin: 0;
+    padding: 0;
+}
+
+.enlaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arriba{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.contacto{
+    display: flex;
+    border-left: 2px solid rgb(190, 190, 190);
+    border-right: 2px solid rgb(190, 190, 190);
+    justify-content: center;
+    align-items: center;
+}
+
+.escribenos{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.lista{
+    margin: 5px;
+    padding: 0;
+}
+
+.lif{
+    margin: 5px;
+    padding: 0;
+    list-style: none;
+
+}
+
+.url{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.url:hover, .arriba:hover {
+    color: rgb(160, 90, 50);
+    text-decoration: underline;
+}
+
+.escritos{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copy{
+    margin: 0;
+    padding: 0;
+}
